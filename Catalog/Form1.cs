@@ -17,7 +17,8 @@ namespace Catalog
         {
             IGenericRepository<Book> repositoryBook = unitOfWork.Repository<Book>();
 
-            foreach (Book book in repositoryBook.GetAll())
+            var b = repositoryBook.GetAll();
+            foreach (Book book in b)
             {
 
                 var SageName = "";

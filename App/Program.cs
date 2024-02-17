@@ -22,14 +22,14 @@ sage.Books.Add(book3);*/
 
 
 
-foreach (Sage sage1 in repositorySage.GetAll())
+/*foreach (Sage sage1 in repositorySage.GetAll())
 {
     Console.Write(sage1.Name + ": ");
     foreach (Book book in sage1.Books)
     {
         Console.Write(book.Title + " ");
     }
-}
+}*/
 
 repositorySage.Add(new Sage { Name = "sageToRename" });
 repositorySage.Add(new Sage { Name = "sageToDelete" });
